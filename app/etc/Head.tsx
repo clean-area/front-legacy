@@ -23,7 +23,7 @@ export default function Head() {
   const [age, setAge] = useState("연령선택");
 
   return (
-    <div className="flex flex-col space-y-[20px]">
+    <div className="flex flex-col space-y-[10px] mt-[25px] mb-[10px]">
       <div className="flex items-center justify-between w-full px-[25px] h-[32px]">
         <div className="space-x-[12px]">
           <DropDown list={targets} selected={target} setSelected={setTarget} />

@@ -24,10 +24,11 @@ export default function SubMenuBar() {
   const pathname = usePathname();
   console.log(pathname);
   return (
-    <div className="flex items-center space-x-[16px] w-full h-[50px] overflow-auto">
+    <div className="flex items-center space-x-[16px] w-[100% - 200px] h-[50px] overflow-auto">
       <div className="w-[25px]"></div>
-      {menus.map((el) => (
+      {menus.map((el, idx) => (
         <Link
+          key={idx}
           href={el.href}
           className={`${
             true && "border-b-2 border-[#3592FF]"
