@@ -1,4 +1,4 @@
-"use Client";
+"use client";
 
 import { Dispatch, SetStateAction, useState } from "react";
 
@@ -8,7 +8,7 @@ interface DropDownProps {
   setSelected: Dispatch<SetStateAction<string>>;
 }
 
-export default function DropDown({
+export default function DropDownRequire({
   list,
   selected,
   setSelected,
@@ -19,7 +19,7 @@ export default function DropDown({
     <div className="relative inline-block text-left">
       <div>
         <button
-          onClick={() => setIsOpen(true)}
+          onClick={() => setIsOpen((e) => !e)}
           type="button"
           className="inline-flex w-[102px] justify-center gap-x-1.5 rounded-[50px] px-3 py-[4.8px] bg-[#E8F5FF] text-[15px] text-[#3A3A3C] font-semibold text-gray-900 flex items-center"
           id="menu-button"
