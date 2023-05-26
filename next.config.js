@@ -2,6 +2,6 @@
 
 module.exports = {
   images: {
-    domains: ["i2-prod.liverpoolecho.co.uk"],
+    domains: ["i2-prod.liverpoolecho.co.uk", "sp-ao.shortpixel.ai"],
   },
 };
