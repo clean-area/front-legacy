@@ -29,8 +29,12 @@ export default function ImgSlider() {
           showNavs={true}
         />
       ) : (
-        <></>
+        <div className="h-[220px] w-full bg-[#E8F5FF]" />
       )}
     </div>
   );
 }
+
+// maxWidth 프로퍼티가 존재하지 않음 className이나 style로 해결해 볼려고 했으나 실패
+// 따라서 윈도우 객체의 resize 이벤트를 사용함
+// resize 이벤트 등록하는데에 걸리는 시간 동안 자리를 채울 빈 div 추가
