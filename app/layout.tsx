@@ -1,4 +1,4 @@
-import Head from "./Head";
+import Head from "./etc/Head";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
