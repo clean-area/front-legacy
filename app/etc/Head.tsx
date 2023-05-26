@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import DropDown from "./DropDown";
 import SubMenuBar from "./SubMenuBar";
+import DropDownRequire from "./DropDownRequire";
 
 const targets = [
   "대상선택",
@@ -26,8 +26,12 @@ export default function Head() {
     <div className="flex flex-col space-y-[10px] mt-[25px] mb-[10px]">
       <div className="flex items-center justify-between w-full px-[25px] h-[32px]">
         <div className="space-x-[12px]">
-          <DropDown list={targets} selected={target} setSelected={setTarget} />
-          <DropDown list={ages} selected={age} setSelected={setAge} />
+          <DropDownRequire
+            list={targets}
+            selected={target}
+            setSelected={setTarget}
+          />
+          <DropDownRequire list={ages} selected={age} setSelected={setAge} />
         </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
