@@ -17,7 +17,7 @@ export default function MainPage() {
         url={"/hello"}
       >
         <div className="flex overflow-auto space-x-[16px]">
-          <div className="w-[9px]" />
+          <div className="min-w-[9px]" />
           <PolicyBoxAtHome />
           <PolicyBoxAtHome />
           <PolicyBoxAtHome />
@@ -35,7 +35,7 @@ export default function MainPage() {
         url={"/hello"}
       >
         <div className="flex overflow-auto space-x-[16px]">
-          <div className="w-[9px]" />
+          <div className="min-w-[9px]" />
           <PolicyBoxAtHome />
           <PolicyBoxAtHome />
           <PolicyBoxAtHome />
@@ -52,13 +52,15 @@ export default function MainPage() {
         }
         comment={"다른 사용자들의 리뷰를 통해, 나에게 맞는 정책을 찾아보세요!"}
       >
-        <div className="flex overflow-auto space-x-[16px]">
+        <div className="flex overflow-auto space-x-[24px]">
+          <div className="min-w-[3px]" />
           <OneLineCommentContent />
           <OneLineCommentContent />
           <OneLineCommentContent />
           <OneLineCommentContent />
         </div>
       </OneLineCommentPreViewBox>
+      <div className="h-[50px]"></div>
     </>
   );
 }

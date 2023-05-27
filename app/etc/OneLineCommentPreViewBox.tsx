@@ -18,8 +18,8 @@ export default function OneLineCommentPreViewBox({
         <p className="text-[12px] text-[#8E8E93] cursor-pointer mt-[4px] mb-[16px]">
           {comment}
         </p>
-        {children}
       </div>
+      {children}
     </div>
   );
 }
