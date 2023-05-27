@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 
-import BackButton from "./etc/BackButton";
 import SearchInput from "./etc/SearchInput";
 import PopularityPolicy from "./etc/PopularityPolicy";
 import PopularitySearch from "./etc/PopularitySearch";
+import BackButton from "../etc/BackButton";
 
 export default function SearchPage() {
   const [search, setSearch] = useState("");
