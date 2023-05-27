@@ -26,7 +26,8 @@ export default function ImgSlider() {
           height={220}
           images={images}
           showBullets={true}
-          showNavs={true}
+          showNavs={false}
+          autoPlay
         />
       ) : (
         <div className="h-[220px] w-full bg-[#E8F5FF]" />

@@ -25,7 +25,7 @@ export default function SubMenuBar() {
 
   return (
     <div className="flex items-center space-x-[16px] w-[100% - 200px] h-[50px] overflow-auto">
-      <div className="w-[25px]"></div>
+      <div className="min-w-[9px]"></div>
       {menus.map((el, idx) => (
         <Link
           key={idx}
