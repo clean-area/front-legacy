@@ -4,6 +4,7 @@ import FillHalfStar from "../etc/FillHalfStar";
 import EmptyStar from "../etc/EmptyStar";
 import ReviewBox from "../etc/ReviewBox";
 import Image from "next/image";
+import Link from "next/link";
 
 interface DetailPageProps {
   params: {
@@ -133,9 +134,11 @@ export default function DetailPage({ params }: DetailPageProps) {
         <p className="text-center text-[14px] text-[#8E8E93] mb-[28px]">
           <span className="text-[#3592FF]">4.7</span> / 5
         </p>
-        <button className="w-full bg-[#3592FF] rounded-[8px] text-[15px] text-[white] font-semibold py-[6px] leading-[24px]">
-          후기 작성하기
-        </button>
+        <Link href={"./writereview/2"}>
+          <button className="w-full bg-[#3592FF] rounded-[8px] text-[15px] text-[white] font-semibold py-[6px] leading-[24px]">
+            후기 작성하기
+          </button>
+        </Link>
       </div>
 
       <ReviewBox />
